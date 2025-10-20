@@ -1,50 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | FoodExpress</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fff8e1; 
+      font-family: Arial, sans-serif;
+    }
+     .navbar {
+      background-color: #ffc107;
+    }
+
+    .navbar a {
+      color: black !important;
+      font-weight: 600;
+    }
+
+    .register-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .register-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      max-width: 850px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .gif-section {
+      background-color: #ffeb3b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .gif-section img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .form-section {
+      padding: 40px;
+    }
+
+    .form-section h3 {
+      color: #ff9800;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .btn-custom {
+      background-color: #ff9800;
+      color: white;
+      font-weight: 600;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background-color: #e68900;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container mt-4">
-        <div class="row">
-            <form class="col-12 col-md-6">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <div class="col-12 col-md-6 text-center">
-                <img class="w-75" src="https://i.pinimg.com/originals/ca/d7/e5/cad7e5f1da8a4751cc0acc5c77009e4b.gif" alt=""/>
-            </div>
-        </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🍔Yummy Bites</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
+  <div class="register-container">
+    <div class="register-card row g-0">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+      <div class="col-md-6 gif-section">
+        <img src="https://media.tenor.com/hMJcmQ_M9ykAAAAM/ready-for-dinner-lets-eat.gif" alt="Food GIF">
+      </div>
+
+      <div class="col-md-6 form-section">
+        <h3>Create Account</h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="confirm-password" class="form-label">Confirm Password</label>
+            <input type="password" id="confirm-password" class="form-control" placeholder="Re-enter password" required>
+          </div>
+
+          <button type="submit" class="btn btn-custom w-100 mt-2">Register</button>
+
+          <p class="text-center mt-3">Already have an account? <a href="#" style="color:#ff9800;">Login</a></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
 </body>
-
 </html>

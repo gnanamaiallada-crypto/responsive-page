@@ -1,109 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yummy Bites | Online Food Delivery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fff8dc; 
+      font-family: Arial, sans-serif;
+    }
+
+
+    .navbar {
+      background-color: #ffc107; 
+    }
+
+    .navbar a {
+      color: black !important;
+      font-weight: 600;
+    }
+
+ 
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #ffeb3b;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+    }
+
+    .menu {
+      padding: 50px 0;
+    }
+
+    .menu h2 {
+      text-align: center;
+      color: #d35400;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .contact {
+      background-color: #ffeb99;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: #d35400;
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+
+    footer {
+      background-color: #ffc107;
+      text-align: center;
+      padding: 15px;
+      font-weight: 500;
+    }
+  </style>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-md bg-warning">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="https://avatars.githubusercontent.com/u/111624137?s=280&v=4" width="50" height="50" alt="" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="register.html">Register</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
 
-    <div class="container mt-4">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://png.pngtree.com/png-vector/20250320/ourmid/pngtree-cheesy-macaroni-mozzarella-in-white-oval-serving-bowl-png-image_15793761.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Pasta</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://static.vecteezy.com/system/resources/previews/053/296/592/non_2x/loaded-fries-transparent-background-free-png.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Loaded fries</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://static.vecteezy.com/system/resources/previews/035/270/756/non_2x/ai-generated-tasty-burger-on-transparent-background-ai-generated-free-png.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Burger with fries</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://png.pngtree.com/png-vector/20241211/ourmid/pngtree-authentic-italian-pizza-with-cheese-and-fresh-vegetable-toppings-png-image_14714611.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Pizza</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🍔Yummy Bites</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Login</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
+  <section class="hero">
+    <h1>Welcome to Yummy Bites 🍔</h1>
+    <p>Fresh and fast food delivered straight to your door!</p>
+    <a href="#menu" class="btn btn-dark">Explore Menu</a>
+  </section>
 
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg" alt="Burger" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">Burger</h5>
+              <p class="card-text">Juicy burger with cheese and veggies.</p>
+              <button class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Pizza" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pizza</h5>
+              <p class="card-text">Hot cheesy pizza with toppings of your choice.</p>
+              <button class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://static01.nyt.com/images/2018/09/16/magazine/16mag-eat/16mag-eat-jumbo.png" alt="Fries" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">French Fries</h5>
+              <p class="card-text">Crispy golden fries served hot and fresh.</p>
+              <button class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" rows="3" placeholder="Write your message"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-dark">Send Message</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Yummy Bites | Fresh & Fast Delivery 🍽️
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
